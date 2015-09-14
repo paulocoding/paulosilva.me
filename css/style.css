@@ -31,16 +31,48 @@ h3 {
 	text-align: center;
 }
 
+.section h2 {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.section-side {
+	margin-top: 25px;
+	float: left;
+	width: 35%;
+	border-bottom: 2px solid #00d49f;  
+}
+
+.section {
+	float: left;
+	width: 30%;
+}
+
+p {
+	display: inline;
+}
 .content {
 	max-width: 900px;
     margin: auto;
-	padding: 20px 7.5%;
 }
-
+.box-3 {
+	float: left;
+	width: 33%;
+	margin: 5px 0;
+	text-align: center;
+}
+.grey {
+	color: #999;
+}
+.greyBG {
+	background-color: #EEE;
+	padding: 0 3%;
+}
 .headers {
 	margin: 140px 0 0 0;
 	display: block;
 	float: left;
+	padding: 10px 0;
 }
 
 header {
@@ -62,10 +94,15 @@ a::selection {
 
 .profPhoto {
 	float: right;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
-
+/* float clear*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* resolution breakpoints */
 
@@ -93,11 +130,11 @@ a::selection {
 	.content {
 		max-width: 640px;
 		margin: auto;
-		padding: 20px 7.5%;
+		padding: 0 7.5%;
 	}	
    .profPhoto {
 		float: right;
-		margin-top: 43px;
+		margin-top: 63px;
 		width: 200px;
 	}
 }
@@ -131,7 +168,7 @@ a::selection {
 	.content {
 		max-width: 640px;
 		margin: auto;
-		padding: 20px 7.5%;
+		padding: 0 7.5%;
 	}	
    .profPhoto {
 	   	display: block;
