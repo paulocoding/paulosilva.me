@@ -3,6 +3,10 @@ body {
   color: #333;
   font-family: 'Lato', Sans-serif; }
 
+::-moz-selection {
+  background-color: #263e59;
+  color: #8ee8d1; }
+
 ::selection {
   background-color: #263e59;
   color: #8ee8d1; }
@@ -51,6 +55,9 @@ p {
   padding: 0 3%; }
 
 a {
+  color: #d4fff4; }
+
+a::-moz-selection {
   color: #d4fff4; }
 
 a::selection {

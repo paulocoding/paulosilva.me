@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', function() {
     
@@ -8,15 +9,15 @@ gulp.task('default', function() {
         server: "./"
     });
     
-    gulp.watch('sass/**/*.scss', ['sass']);
+    gulp.watch('sass/**/*.scss', ['sass']);    
+    gulp.watch(['./*.html','./css/*.css']).on('change', browserSync.reload);
     
-    gulp.watch("./*.html").on('change', browserSync.reload);
-    gulp.watch("./css/*.css").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('./css/'));
 });
 
