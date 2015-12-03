@@ -68,3 +68,26 @@ a::selection {
   content: "";
   display: table;
   clear: both; }
+
+/* resolution breakpoints */
+/* 900px breakpoint*/
+@media only screen and (max-width: 900px) {
+  .section-side {
+    width: 30%; }
+  .section {
+    width: 40%; }
+  .basicinfo p {
+    font-size: 0.81em; } }
+
+/* 600px breakpoint*/
+@media only screen and (max-width: 600px) {
+  .section-side {
+    width: 23%; }
+  .section {
+    width: 54%; }
+  .basicinfo p {
+    font-size: 1em; }
+  .basicinfo span {
+    display: block; } }
+
+/* 480px breakpoint*/

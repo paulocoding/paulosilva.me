@@ -29,7 +29,7 @@ h3 {
 	margin-top: 25px;
 	float: left;
 	width: 35%;
-	border-bottom: 2px solid #00d49f;  
+	border-bottom: 2px solid #00d49f;
 }
 
 .section {
@@ -75,4 +75,45 @@ a::selection {
   content: "";
   display: table;
   clear: both;
+}
+
+
+/* resolution breakpoints */
+
+/* 900px breakpoint*/
+@media only screen and (max-width: 900px) {
+	.section-side {
+		width: 30%;
+	}
+	.section {
+		width: 40%;
+	}
+	.basicinfo p {
+		font-size: 0.81em;
+	}
+}
+
+/* 600px breakpoint*/
+@media only screen and (max-width: 600px) {
+	.section-side {
+		width: 23%;
+	}
+	.section {
+		width: 54%;
+	}
+
+	.basicinfo{
+		p {
+			font-size: 1em;
+		}
+		span {
+			display: block;
+		}
+}
+
+}
+
+/* 480px breakpoint*/
+@media only screen and (max-width: 480px) {
+
 }

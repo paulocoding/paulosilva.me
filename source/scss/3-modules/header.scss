@@ -23,13 +23,13 @@
 
 header {
   	width: 100%;
-	height: 450px;
+	height: 400px;
 	background-color: #00d49f;
 }
 
 .profPhoto {
 	float: right;
-	margin-top: 50px;
+	margin-top: 0;
 }
 
 
@@ -37,34 +37,39 @@ header {
 
 /* 900px breakpoint*/
 @media only screen and (max-width: 900px) {
+	$headerHeight: 250px;
 	header {
 		width: 100%;
-		height: 350px;
+		height: $headerHeight;
 		background-color: #00d49f;
 	}
-	h1 {
-		font-size: 1.5em;
-		text-align: center;
-	}
+	.headers {
+		margin: 70px 0 0 0;
+		display: block;
+		float: left;
+		padding: 10px 0;
+		h1 {
+			font-size: 1.6em;
+			text-align: center;
+		}
 
-	h2 {
-		font-size: 2em;
-		text-align: center;
-	}
+		h2 {
+			font-size: 1.8em;
+			text-align: center;
+		}
 
-	h3 {
-		font-size: 1.2em;
-		text-align: center;
+		h3 {
+			font-size: 1.3em;
+			text-align: center;
+		}
+	}
+	.profPhoto {
+		height: $headerHeight;
 	}
 	.content {
 		max-width: 640px;
 		margin: auto;
-		padding: 0 7.5%;
-	}
-   .profPhoto {
-		float: right;
-		margin-top: 63px;
-		width: 200px;
+		padding: 0 5%;
 	}
 }
 
@@ -72,22 +77,8 @@ header {
 @media only screen and (max-width: 600px) {
 	header {
 		width: 100%;
-		height: 560px;
+		height: 390px;
 		background-color: #00d49f;
-	}
-	h1 {
-		font-size: 2em;
-		text-align: center;
-	}
-
-	h2 {
-		font-size: 2.5em;
-		text-align: center;
-	}
-
-	h3 {
-		font-size: 1.5em;
-		text-align: center;
 	}
 	.headers {
 		margin: 0;
@@ -104,6 +95,7 @@ header {
 		float: none;
 		margin: 0 auto 0 auto;
 		padding: 0;
+		height: auto;
 		width: 260px;
 	}
 }
@@ -113,7 +105,7 @@ header {
 @media only screen and (max-width: 480px) {
 	header {
 		width: 100%;
-		height: 445px;
+		height: 330px;
 		background-color: #00d49f;
 	}
 	h1 {
@@ -135,6 +127,7 @@ header {
 		float: none;
 		margin: 0 auto 0 auto;
 		padding: 0;
+		height: auto;
 		width: 200px;
 	}
 }
