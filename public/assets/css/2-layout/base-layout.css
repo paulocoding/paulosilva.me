@@ -24,6 +24,18 @@ h3 {
   font-size: 1.5em;
   text-align: center; }
 
+p {
+  display: inline; }
+
+a {
+  color: #d4fff4; }
+
+a::-moz-selection {
+  color: #d4fff4; }
+
+a::selection {
+  color: #d4fff4; }
+
 .section-side {
   margin-top: 25px;
   float: left;
@@ -33,9 +45,6 @@ h3 {
 .section {
   float: left;
   width: 30%; }
-
-p {
-  display: inline; }
 
 .content {
   max-width: 900px;
@@ -55,19 +64,16 @@ p {
   padding: 5px 20px 15px 20px;
   margin: 20px 0;
   -webkit-border-radius: 4px;
-          border-radius: 4px; }
+          border-radius: 4px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+  .greyBG:hover {
+    background-color: #f3f3f3; }
+    .greyBG:hover h2 {
+      color: #000; }
 
 .top-grey {
   margin-top: 0; }
-
-a {
-  color: #d4fff4; }
-
-a::-moz-selection {
-  color: #d4fff4; }
-
-a::selection {
-  color: #d4fff4; }
 
 /* float clear*/
 .group:after {

@@ -24,6 +24,20 @@ h3 {
 	font-size: 1.5em;
 	text-align: center;
 }
+p {
+	display: inline;
+}
+
+main {
+}
+
+a {
+	color: #d4fff4;
+}
+
+a::selection {
+	color: #d4fff4;
+}
 
 .section-side {
 	margin-top: 25px;
@@ -37,9 +51,6 @@ h3 {
 	width: 30%;
 }
 
-p {
-	display: inline;
-}
 .content {
 	max-width: 900px;
     margin: auto;
@@ -58,22 +69,17 @@ p {
 	padding: 5px 20px 15px 20px;
 	margin: 20px 0;
 	border-radius: 4px;
+	transition: all 0.25s ease-in-out;
+	&:hover{
+		background-color: #f3f3f3;
+		h2 {
+			color: #000;
+		}
+	}
 }
 .top-grey {
 	margin-top: 0;
 }
-
-main {
-}
-
-a {
-	color: #d4fff4;
-}
-
-a::selection {
-	color: #d4fff4;
-}
-
 
 /* float clear*/
 .group:after {
@@ -81,7 +87,6 @@ a::selection {
   display: table;
   clear: both;
 }
-
 
 /* resolution breakpoints */
 

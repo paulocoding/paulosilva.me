@@ -47,6 +47,18 @@ h3 {
   font-size: 1.5em;
   text-align: center; }
 
+p {
+  display: inline; }
+
+a {
+  color: #d4fff4; }
+
+a::-moz-selection {
+  color: #d4fff4; }
+
+a::selection {
+  color: #d4fff4; }
+
 .section-side {
   margin-top: 25px;
   float: left;
@@ -56,9 +68,6 @@ h3 {
 .section {
   float: left;
   width: 30%; }
-
-p {
-  display: inline; }
 
 .content {
   max-width: 900px;
@@ -78,19 +87,16 @@ p {
   padding: 5px 20px 15px 20px;
   margin: 20px 0;
   -webkit-border-radius: 4px;
-          border-radius: 4px; }
+          border-radius: 4px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+  .greyBG:hover {
+    background-color: #f3f3f3; }
+    .greyBG:hover h2 {
+      color: #000; }
 
 .top-grey {
   margin-top: 0; }
-
-a {
-  color: #d4fff4; }
-
-a::-moz-selection {
-  color: #d4fff4; }
-
-a::selection {
-  color: #d4fff4; }
 
 /* float clear*/
 .group:after {
@@ -127,7 +133,11 @@ a::selection {
   padding: 10px 0; }
   .headers h1 {
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    .headers h1:hover {
+      font-size: 2.1em; }
   .headers h2 {
     font-size: 3em;
     text-align: center; }
@@ -138,11 +148,17 @@ a::selection {
 header {
   width: 100%;
   height: 400px;
-  background-color: #00d49f; }
+  background-color: #00d49f;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
 
 .profPhoto {
   float: right;
-  margin-top: 0; }
+  margin-top: 0;
+  border: 10px solid #333;
+  border-bottom: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
 
 /* resolution breakpoints */
 /* 900px breakpoint*/
@@ -159,6 +175,8 @@ header {
     .headers h1 {
       font-size: 1.6em;
       text-align: center; }
+      .headers h1:hover {
+        font-size: 1.7em; }
     .headers h2 {
       font-size: 1.8em;
       text-align: center; }
@@ -166,7 +184,9 @@ header {
       font-size: 1.3em;
       text-align: center; }
   .profPhoto {
-    height: 250px; }
+    height: 245px;
+    border: 5px solid #333;
+    border-bottom: 0; }
   .content {
     max-width: 640px;
     margin: auto;
@@ -176,7 +196,7 @@ header {
 @media only screen and (max-width: 600px) {
   header {
     width: 100%;
-    height: 390px;
+    height: 400px;
     background-color: #00d49f; }
   .headers {
     margin: 0;
@@ -198,7 +218,7 @@ header {
 @media only screen and (max-width: 480px) {
   header {
     width: 100%;
-    height: 330px;
+    height: 340px;
     background-color: #00d49f; }
   h1 {
     font-size: 1.5em;
