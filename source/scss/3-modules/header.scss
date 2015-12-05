@@ -43,8 +43,8 @@ header {
 
 /* resolution breakpoints */
 
-/* 900px breakpoint*/
-@media only screen and (max-width: 900px) {
+/* 920px breakpoint*/
+@media only screen and (max-width: 920px) {
 	$headerHeight: 250px;
 	header {
 		width: 100%;
@@ -79,11 +79,6 @@ header {
 		border: 5px solid #333;
 		border-bottom: 0;
 	}
-	.content {
-		max-width: 640px;
-		margin: auto;
-		padding: 0 5%;
-	}
 }
 
 /* 600px breakpoint*/
@@ -97,11 +92,6 @@ header {
 		margin: 0;
 		border-top: 1px solid #333;
 		float: none;
-	}
-	.content {
-		max-width: 640px;
-		margin: auto;
-		padding: 0 7.5%;
 	}
    .profPhoto {
 	   	display: block;
