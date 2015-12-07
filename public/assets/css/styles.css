@@ -45,7 +45,8 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  text-align: center; }
+  text-align: center;
+  font-weight: 400; }
 
 p {
   display: inline; }
@@ -137,9 +138,9 @@ footer {
 /* 920px breakpoint*/
 @media only screen and (max-width: 920px) {
   .section-side {
-    width: 30%; }
+    width: 25%; }
   .section {
-    width: 40%; }
+    width: 50%; }
   .basicinfo p {
     font-size: 0.81em; }
   .content {
@@ -162,9 +163,9 @@ footer {
 /* 600px breakpoint*/
 @media only screen and (max-width: 600px) {
   .section-side {
-    width: 23%; }
+    width: 20%; }
   .section {
-    width: 54%; }
+    width: 60%; }
   .basicinfo p {
     font-size: 1em; }
   .basicinfo span {
@@ -175,6 +176,12 @@ footer {
     padding: 0 7.5%; } }
 
 /* 480px breakpoint*/
+@media only screen and (max-width: 480px) {
+  .section-side {
+    width: 15%; }
+  .section {
+    width: 70%; } }
+
 .headers {
   margin: 140px 0 0 0;
   display: block;
@@ -278,6 +285,27 @@ header {
     height: auto;
     width: 200px; } }
 
+.tech-skills h3 {
+  text-align: left;
+  padding: 2px 2px 4px 8px; }
+
+.tech-skills ul {
+  padding: 0;
+  margin: 0 0 20px 30px;
+  list-style: none; }
+  .tech-skills ul li {
+    display: block;
+    float: left;
+    padding: 2px 10px;
+    margin: 2px 4px;
+    background-color: #00d49f;
+    color: #fff;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+    .tech-skills ul li:hover {
+      background-color: #8de8cf;
+      color: #000; }
+
 .projects {
   display: block;
   width: 90%;
@@ -319,7 +347,7 @@ header {
       .projects li figcaption p {
         display: block;
         color: #333;
-        background-color: #90e7c7;
+        background-color: #cbefe0;
         height: 200px;
         line-height: 1.2em;
         padding: 0 8px; }

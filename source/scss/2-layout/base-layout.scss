@@ -23,6 +23,7 @@ h2 {
 h3 {
 	font-size: 1.5em;
 	text-align: center;
+	font-weight: 400;
 }
 p {
 	display: inline;
@@ -129,10 +130,10 @@ footer{
 /* 920px breakpoint*/
 @media only screen and (max-width: 920px) {
 	.section-side {
-		width: 30%;
+		width: 25%;
 	}
 	.section {
-		width: 40%;
+		width: 50%;
 	}
 	.basicinfo p {
 		font-size: 0.81em;
@@ -161,10 +162,10 @@ footer{
 /* 600px breakpoint*/
 @media only screen and (max-width: 600px) {
 	.section-side {
-		width: 23%;
+		width: 20%;
 	}
 	.section {
-		width: 54%;
+		width: 60%;
 	}
 
 	.basicinfo{
@@ -185,5 +186,11 @@ footer{
 
 /* 480px breakpoint*/
 @media only screen and (max-width: 480px) {
+	.section-side {
+		width: 15%;
+	}
+	.section {
+		width: 70%;
+	}
 
 }
