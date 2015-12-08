@@ -26,7 +26,7 @@ h3 {
 	font-weight: 400;
 }
 p {
-	display: inline;
+	display: block;
 }
 
 main {
@@ -34,6 +34,33 @@ main {
 
 a {
 	color: #d4fff4;
+}
+
+footer{
+	background-color: #10ce9f;
+	padding: 20px 20px 15px 20px;
+	margin: 20px 0 0 0;
+	img{
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+		padding: 10px;
+		opacity: 0.85;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	h3 a {
+		display: block;
+		color: #defaec;
+		margin: 8px auto 0 auto;
+		padding: 0;
+		line-height: 1.2em;
+		font-size: 20px;
+		&:hover{
+			color: #fff;
+		}
+	}
 }
 
 a::selection {
@@ -83,30 +110,19 @@ a::selection {
 	margin-top: 0;
 }
 
-footer{
-	background-color: #10ce9f;
-	padding: 20px 20px 15px 20px;
-	margin: 20px 0 0 0;
-	img{
-		display: block;
-		margin: 0 auto;
-		width: 90%;
-		padding: 10px;
-		opacity: 0.85;
-		&:hover {
-			opacity: 1;
-		}
+.left-group {
+	h3 {
+		text-align: left;
+		padding: 18px 2px 1px 10px;
+		color: #00b285
 	}
-	h3 a {
-		display: block;
-		color: #defaec;
-		margin: 8px auto 0 auto;
-		padding: 0;
+	h4 {
+		font-size: 1.1em;
+	}
+	h5 {
+		color: #888;
+		font-weight: 500;
 		line-height: 1.2em;
-		font-size: 20px;
-		&:hover{
-			color: #fff;
-		}
 	}
 }
 
