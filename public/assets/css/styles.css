@@ -281,13 +281,13 @@ header {
     width: 100%;
     height: 340px;
     background-color: #00d49f; }
-  h1 {
+  .headers h1 {
     font-size: 1.5em;
     text-align: center; }
-  h2 {
-    font-size: 1.7em;
+  .headers h2 {
+    font-size: 1.6em;
     text-align: center; }
-  h3 {
+  .headers h3 {
     font-size: 1.2em;
     text-align: center; }
   .profPhoto {
@@ -297,6 +297,15 @@ header {
     padding: 0;
     height: auto;
     width: 200px; } }
+
+/* 310px breakpoint*/
+@media only screen and (max-width: 310px) {
+  .headers h2 {
+    font-size: 1.3em;
+    text-align: center; }
+  .headers h3 {
+    font-size: 1.1em;
+    text-align: center; } }
 
 .tech-skills h3 {
   text-align: left;
