@@ -115,6 +115,16 @@ nav {
 				}		
 			}
 		}
+		
 	}
+	
+	.menu-open{
+          width: 95%;
+          height: 325px;
+		transition: width 150ms, height 200ms 140ms,
+	}
+	.fixed{
+			top: 10px;
+		}
 	
 }

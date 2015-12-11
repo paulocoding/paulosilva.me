@@ -85,26 +85,7 @@ var main = function () {
   // menu toggle function
   var menuToggle = function(){
     var menu = $('nav');
-    if(!menu.hasClass('menu-open')){
-      menu.animate({ 
-          width: ($('body').width()-20)+'px'
-        }, 200, function(){
-          menu.animate({ 
-          height: '325px'
-        }, 300);
-        });
-      menu.addClass('menu-open');
-    }
-    else {
-      menu.animate({ 
-          height: '42px'
-        }, 300, function(){          
-          menu.animate({ 
-              width: '42px'
-            }, 200);
-        });
-      menu.removeClass('menu-open');      
-    }
+    menu.toggleClass('menu-open');
   };
   
 // hamburger click
@@ -112,6 +93,8 @@ var main = function () {
     menuToggle();
     e.preventDefault();
   });
+  
+  // end main function
 };
 
 $(document).ready(main);

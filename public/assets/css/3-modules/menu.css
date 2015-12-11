@@ -94,4 +94,11 @@ nav {
       -webkit-transition: background-color 200ms;
       transition: background-color 200ms; }
       nav .menu a:hover {
-        background-color: #46d6b2; } }
+        background-color: #46d6b2; }
+  .menu-open {
+    width: 95%;
+    height: 325px;
+    -webkit-transition: width 150ms, height 200ms 140ms;
+    transition: width 150ms, height 200ms 140ms; }
+  .fixed {
+    top: 10px; } }
