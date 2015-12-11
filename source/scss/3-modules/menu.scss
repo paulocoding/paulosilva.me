@@ -1,57 +1,42 @@
 
-// <nav>
-// 	<a href="#" class="expand">@</a>
-// 	<div class="menu">
-// 		<a href="#about" class="scroll">Who am I?</a>
-// 		<a href="#objectives" class="scroll">Objectives</a>
-// 		<a href="#tech-skills" class="scroll">Technical Skills</a>
-// 		<a href="#projects" class="scroll">Projects</a>
-// 		<a href="#education" class="scroll">Education</a>
-// 		<a href="#experience" class="scroll">Experience</a>
-// 		<a href="#contact" class="scroll">Contacts</a>
-// 	</div>
-// </nav>
-
 nav {
-	display: block;
-	position: fixed;
-	right: 10px;
-	top: 10px;
-	margin: 0;
-	padding: 0;
-	width: 42px;
-	height: 42px;
-	overflow: hidden;
-	border-radius: 4px;
-	background-color: #115259;
-	opacity: 0.9;
-	z-index: 2;
-	a.expand{
 		display: block;
-		width: 100%;
-		margin: 0 0 8px 0;
-		padding: 0 10px 0 0;
-		text-align: right;
-		float: right;
-		font-size: 1.6em;
-	}
-	.menu{
-		a {
-			display: block;
-			width: 100%;
-			text-align: center;
-			float: right;
-			padding: 0;
-			border-bottom: 1px solid #54eac5;
-			font-size: 1.4em;
-			transition: background-color 200ms;
-			&:hover{
-				background-color: #00D49F;
-			}		
+		position: absolute;
+		right: 0;
+		top: 400px;
+		margin: 0;
+		padding: 0;
+		width: 120px;
+		height: 350px;
+		background-color: #222;
+		z-index: 2;
+		
+		a.expand{
+			display: none;
 		}
-	}
+		.menu{
+			a {
+				color: #e5e5e5;
+				display: block;
+				text-align: center;
+				padding: 12px 2px;
+				font-size: 1.1em;
+				transition: background-color 200ms;
+				&:hover{
+					background-color: #10ce9f;
+				}	
+			}
+		}
 }
+.active{
+	background-color: #10ce9f;					
+}	
 
+.fixed{
+		position: fixed;
+		top: 140px;
+	}
+	
 .back-top {
 	display: block;
 	position: fixed;
@@ -61,10 +46,75 @@ nav {
 	padding: 0;
 	width: 42px;
 	height: 42px;
-	background-color: #115259;
-	opacity: 0.7;
+	background-color: #222;
+	color: #fff;
 	z-index: 2;
 	font-size: 1.6em;
 	border-radius: 4px;
 	text-align: center;
+	&:hover{
+		background-color: #10ce9f;
+	}		
+}
+
+
+/* resolution breakpoints */
+
+@media only screen and (max-width: 1180px) {
+	nav {
+		top: 300px;
+	}
+}
+
+@media only screen and (max-width: 1010px) {
+	nav {
+		top: 250px;
+	}
+}
+// mobile menu 
+
+/* 910px breakpoint*/
+@media only screen and (max-width: 910px) {
+	
+	nav {
+		display: block;
+		position: fixed;
+		right: 10px;
+		top: 10px;
+		margin: 0;
+		padding: 0;
+		width: 42px;
+		height: 42px;
+		overflow: hidden;
+		border-radius: 4px;
+		background-color: #222;
+		z-index: 2;
+		a.expand{
+			color: #fff;
+			display: block;
+			width: 100%;
+			margin: 0 0 8px 0;
+			padding: 0 10px 0 0;
+			text-align: right;
+			float: right;
+			font-size: 1.6em;
+		}
+		.menu{
+			a {
+				color: #fff;
+				display: block;
+				width: 100%;
+				text-align: center;
+				float: right;
+				padding: 3px 0;
+				border-bottom: 1px solid #14604d;
+				font-size: 1.4em;
+				transition: background-color 200ms;
+				&:hover{
+					background-color: #46d6b2;
+				}		
+			}
+		}
+	}
+	
 }

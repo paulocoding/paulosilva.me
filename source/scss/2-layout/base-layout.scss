@@ -41,7 +41,7 @@ a {
 
 footer{
 	background-color: #10ce9f;
-	padding: 20px 20px 15px 20px;
+	padding: 40px 20px 40px 20px;
 	margin: 20px 0 0 0;
 	img{
 		display: block;
@@ -146,8 +146,40 @@ a::selection {
 
 /* resolution breakpoints */
 
-/* 920px breakpoint*/
-@media only screen and (max-width: 920px) {
+/* 1180px breakpoint*/
+@media only screen and (max-width: 1180px) {
+	.section-side {
+		width: 25%;
+	}
+	.section {
+		width: 50%;
+	}
+	.basicinfo p {
+		font-size: 0.81em;
+	}
+	.content {
+		max-width: 740px;
+		margin: auto;
+		padding: 0 5%;
+	}
+	.col-s-1 {
+		display: block;
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.col-s-2 {
+		display: block;
+		float: left;
+		width: 50%;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* 1010px breakpoint*/
+@media only screen and (max-width: 1010px) {
 	.section-side {
 		width: 25%;
 	}

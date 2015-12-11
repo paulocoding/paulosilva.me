@@ -43,13 +43,49 @@ header {
 
 /* resolution breakpoints */
 
-/* 920px breakpoint*/
-@media only screen and (max-width: 920px) {
+/* 1180px breakpoint*/
+@media only screen and (max-width: 1180px) {
+	
+	$headerHeight: 300px;
+	header {
+		width: 100%;
+		height: $headerHeight;
+	}
+	.headers {
+		margin: 70px 0 0 0;
+		display: block;
+		float: left;
+		padding: 10px 0;
+		h1 {
+			font-size: 1.8em;
+			text-align: center;
+			&:hover {
+				font-size: 1.7em;
+			}
+		}
+
+		h2 {
+			font-size: 2em;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 1.5em;
+			text-align: center;
+		}
+	}
+	.profPhoto {
+		height: ($headerHeight - 5px);
+		border: 5px solid #333;
+		border-bottom: 0;
+	}
+}
+/* 1010px breakpoint*/
+@media only screen and (max-width: 1010px) {
 	$headerHeight: 250px;
 	header {
 		width: 100%;
 		height: $headerHeight;
-		background-color: #00d49f;
 	}
 	.headers {
 		margin: 70px 0 0 0;
@@ -86,7 +122,6 @@ header {
 	header {
 		width: 100%;
 		height: 400px;
-		background-color: #00d49f;
 	}
 	.headers {
 		margin: 0;
@@ -109,7 +144,6 @@ header {
 	header {
 		width: 100%;
 		height: 340px;
-		background-color: #00d49f;
 	}
 	.headers {
 		h1 {

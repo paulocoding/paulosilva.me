@@ -33,12 +33,37 @@ header {
   transition: all 0.25s ease-in-out; }
 
 /* resolution breakpoints */
-/* 920px breakpoint*/
-@media only screen and (max-width: 920px) {
+/* 1180px breakpoint*/
+@media only screen and (max-width: 1180px) {
   header {
     width: 100%;
-    height: 250px;
-    background-color: #00d49f; }
+    height: 300px; }
+  .headers {
+    margin: 70px 0 0 0;
+    display: block;
+    float: left;
+    padding: 10px 0; }
+    .headers h1 {
+      font-size: 1.8em;
+      text-align: center; }
+      .headers h1:hover {
+        font-size: 1.7em; }
+    .headers h2 {
+      font-size: 2em;
+      text-align: center; }
+    .headers h3 {
+      font-size: 1.5em;
+      text-align: center; }
+  .profPhoto {
+    height: 295px;
+    border: 5px solid #333;
+    border-bottom: 0; } }
+
+/* 1010px breakpoint*/
+@media only screen and (max-width: 1010px) {
+  header {
+    width: 100%;
+    height: 250px; }
   .headers {
     margin: 70px 0 0 0;
     display: block;
@@ -64,8 +89,7 @@ header {
 @media only screen and (max-width: 600px) {
   header {
     width: 100%;
-    height: 400px;
-    background-color: #00d49f; }
+    height: 400px; }
   .headers {
     margin: 0;
     border-top: 1px solid #333;
@@ -82,8 +106,7 @@ header {
 @media only screen and (max-width: 480px) {
   header {
     width: 100%;
-    height: 340px;
-    background-color: #00d49f; }
+    height: 340px; }
   .headers h1 {
     font-size: 1.5em;
     text-align: center; }
