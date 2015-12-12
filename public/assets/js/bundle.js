@@ -20,7 +20,7 @@ var main = function () {
   // smooth scroll link
   $('a.scroll').click(function(e) {
         var $anchor = $(this);
-        $('body').stop().animate({
+        $('body, html').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1000);
         e.preventDefault();
@@ -34,7 +34,7 @@ var main = function () {
   
   // back top arrow
   $(document).scroll(function(){
-    if($('body').scrollTop() > 160) {
+    if($('body, html').scrollTop() > 160) {
       $('.back-top').fadeIn(400);
     }
     else {
@@ -44,7 +44,7 @@ var main = function () {
   
   // change menu to fixed on scroll 
   var toogleMenuFixed = function(height) {
-    if($('body').scrollTop() > height){
+    if($('body, html').scrollTop() > height){
           $('nav').addClass('fixed');
         } else {
           $('nav').removeClass('fixed');        
@@ -83,7 +83,7 @@ var main = function () {
       
       // looking for the active section
       for(var i=0, max=sections.length;i<max;i++){
-        if(sectionOffset[i] < $('body').scrollTop()) {
+        if(sectionOffset[i] < $('body, html').scrollTop()) {
           $('.menu-btn').removeClass('active');
           $($('.menu-btn')[i]).addClass('active');
         }
