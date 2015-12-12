@@ -94,6 +94,29 @@ var main = function () {
     e.preventDefault();
   });
   
+  // project overlay page 
+  
+  // open an overlay
+  $('.overlay-btn').click(function(e){
+    $('.'+this.id).addClass('overlay-enabled');
+    $('.overlay-dark').addClass('overlay-enabled');
+    e.preventDefault();
+  });
+  
+  // close button on overlay
+  $('.btn-close').click(function(e){
+    $('.overlay-page').removeClass('overlay-enabled');
+    $('.overlay-dark').removeClass('overlay-enabled');
+    e.preventDefault();
+  });
+  
+  // close when clicking outside the project page
+  $('.overlay-dark').click(function(e){
+    $('.overlay-page').removeClass('overlay-enabled');
+    $('.overlay-dark').removeClass('overlay-enabled');
+    e.preventDefault();
+  });
+  
   // end main function
 };
 
