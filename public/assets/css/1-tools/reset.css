@@ -4,3 +4,6 @@
   text-decoration: none;
   font-size: 16px;
   line-height: 1.5em; }
+
+a img {
+  border: 0; }
