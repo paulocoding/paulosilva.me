@@ -32,9 +32,9 @@ var main = function () {
         }
   });
   
-  // back top arrow
+  // show back to top arrow if scrolled down
   $(document).scroll(function(){
-    if($('body, html').scrollTop() > 160) {
+    if($(window).scrollTop() > 160) {
       $('.back-top').fadeIn(400);
     }
     else {
@@ -44,7 +44,7 @@ var main = function () {
   
   // change menu to fixed on scroll 
   var toogleMenuFixed = function(height) {
-    if($('body, html').scrollTop() > height){
+    if($(window).scrollTop() > height){
           $('nav').addClass('fixed');
         } else {
           $('nav').removeClass('fixed');        
@@ -83,7 +83,7 @@ var main = function () {
       
       // looking for the active section
       for(var i=0, max=sections.length;i<max;i++){
-        if(sectionOffset[i] < $('body, html').scrollTop()) {
+        if(sectionOffset[i] < $(window).scrollTop()) {
           $('.menu-btn').removeClass('active');
           $($('.menu-btn')[i]).addClass('active');
         }
