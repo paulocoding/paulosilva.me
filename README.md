@@ -1,3 +1,3 @@
 # My Personal website
 
-My Personal website, wip
+My Personal website

@@ -1,0 +1,32 @@
+.overlay-page {
+  display: block;
+  position: fixed;
+  top: 1%;
+  left: 3%;
+  z-index: 2;
+  width: 94%;
+  height: 98%;
+  background-color: #f2f2f2;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  overflow: scroll; }
+  .overlay-page .btn-close {
+    display: block;
+    float: right;
+    height: 36px;
+    width: 48px;
+    background-color: #333;
+    font-size: 30px;
+    text-align: center;
+    padding: 4px 0;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+    .overlay-page .btn-close:hover {
+      background-color: #10ce9f; }
+  .overlay-page iframe {
+    display: block;
+    width: 640px;
+    height: 480px;
+    margin: 0 auto; }
+  .overlay-page p {
+    padding: 16px 32px; }
