@@ -35,16 +35,17 @@ nav {
   right: 10px;
   bottom: 10px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
   width: 42px;
   height: 42px;
   background-color: #222;
   color: #fff;
   z-index: 2;
-  font-size: 1.6em;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   text-align: center; }
+  .back-top img {
+    padding: 8px 0 0 0; }
   .back-top:hover {
     background-color: #10ce9f; }
 
@@ -74,11 +75,10 @@ nav {
     background-color: #222;
     z-index: 2; }
     nav a.expand {
-      color: #fff;
       display: block;
       width: 100%;
       margin: 0 0 8px 0;
-      padding: 0 10px 0 0;
+      padding: 4px 8px 0 0;
       text-align: right;
       float: right;
       font-size: 1.6em; }
@@ -97,7 +97,7 @@ nav {
         background-color: #46d6b2; }
   .menu-open {
     width: 95%;
-    height: 325px;
+    height: 335px;
     -webkit-transition: width 150ms, height 200ms 140ms;
     transition: width 150ms, height 200ms 140ms; }
   .fixed {
