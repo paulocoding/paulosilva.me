@@ -118,8 +118,24 @@ var main = function () {
   });
   
   // scale up img on click
-  $('.thumb').click(function(e){
-    $(this).toggleClass('full-img');
+  $('.get-overlay-img').click(function(e){
+    $('#full-img')[0].src=this.href;
+    $('.img-overlay').addClass('overlay-enabled');
+    e.preventDefault();    
+  });
+  
+  // close big image
+  $('#full-img').click(function(e){
+    $('#full-img')[0].src='#';
+    $('.img-overlay').removeClass('overlay-enabled');
+    e.preventDefault();        
+  });
+  
+  // close image when clicking outside the IMG
+  $('.img-overlay').click(function(e){
+    $('#full-img')[0].src='#';
+    $('.img-overlay').removeClass('overlay-enabled');
+    e.preventDefault();
   });
   
   // end main function

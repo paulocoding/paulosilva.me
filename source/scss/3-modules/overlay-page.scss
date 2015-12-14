@@ -1,4 +1,4 @@
-.overlay-dark{
+.overlay-dark, .img-overlay{
 	display: none;
 	position: fixed;
 	top: 0;
@@ -7,6 +7,10 @@
 	height: 100%;
 	z-index: 2;
 	background-color: rgba(0,0,0,0.6);
+}
+
+.img-overlay{ 
+	z-index: 4;	
 }
 
 .overlay-page {
@@ -58,8 +62,6 @@
 	display: block;
 }
 
-
-
 .thumb {
 	display: block;
 	float: left;
@@ -68,13 +70,12 @@
   margin: 20px 40px;
 }
 
-.full-img {
+
+#full-img {
       display: block;
-      position: absolute;
-      top: 10px;
-      left: auto;
       max-width: 100%;
-      height: auto;
+			max-height: 100%;
+			margin: 2% auto;
 	}
 	
 /* 960px breakpoint*/
