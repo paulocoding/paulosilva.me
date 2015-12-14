@@ -618,6 +618,31 @@ nav {
 .overlay-enabled {
   display: block; }
 
+.thumb {
+  display: block;
+  float: left;
+  width: 320px;
+  height: 240px;
+  margin: 20px 40px; }
+
+.full-img {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: auto;
+  max-width: 100%;
+  height: auto; }
+
+/* 960px breakpoint*/
+@media only screen and (max-width: 960px) {
+  .thumb {
+    clear: both;
+    display: block;
+    float: none;
+    width: 320px;
+    height: 240px;
+    margin: 20px auto; } }
+
 /* 545px breakpoint*/
 @media only screen and (max-width: 545px) {
   .overlay-page iframe {
@@ -625,3 +650,13 @@ nav {
     width: 240px;
     height: 180px;
     margin: 0 auto; } }
+
+/* 480px breakpoint*/
+@media only screen and (max-width: 480px) {
+  .thumb {
+    clear: both;
+    display: block;
+    float: none;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; } }

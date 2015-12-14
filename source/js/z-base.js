@@ -117,6 +117,11 @@ var main = function () {
     e.preventDefault();
   });
   
+  // scale up img on click
+  $('.thumb').click(function(e){
+    $(this).toggleClass('full-img');
+  });
+  
   // end main function
 };
 
