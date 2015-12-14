@@ -361,6 +361,24 @@ header {
     font-size: 1.1em;
     text-align: center; } }
 
+.cv-download {
+  display: block;
+  background-color: #17b2ef;
+  width: 200px;
+  height: 42px;
+  margin: 12px auto 4px auto;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  color: #fafafa;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 5px 0 0 0;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out; }
+  .cv-download:hover {
+    background-color: #10ce9f;
+    color: #fff; }
+
 .tech-skills h3 {
   text-align: left;
   padding: 2px 2px 4px 8px; }
