@@ -112,10 +112,18 @@ var main = function () {
     e.preventDefault();
   });
   
+  // stop all youtube videos
+  var stopYt= function(){
+    $('.yt-video').each(function(){
+      this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*')
+    });    
+  };
+  
   // close button on overlay
   $('.btn-close').click(function(e){
     $('.overlay-page').removeClass('overlay-enabled');
     $('.overlay-dark').removeClass('overlay-enabled');
+    stopYt();
     e.preventDefault();
   });
   
@@ -123,6 +131,7 @@ var main = function () {
   $('.overlay-dark').click(function(e){
     $('.overlay-page').removeClass('overlay-enabled');
     $('.overlay-dark').removeClass('overlay-enabled');
+    stopYt();
     e.preventDefault();
   });
   
