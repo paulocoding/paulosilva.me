@@ -14,7 +14,7 @@
 	}
 
 	h2 {
-		font-size: 3em;
+		font-size: 2em;
 		text-align: center;
 	}
 
@@ -45,7 +45,7 @@ header {
 
 /* 1180px breakpoint*/
 @media only screen and (max-width: 1180px) {
-	
+
 	$headerHeight: 300px;
 	header {
 		width: 100%;
@@ -65,7 +65,7 @@ header {
 		}
 
 		h2 {
-			font-size: 2em;
+			font-size: 1.7em;
 			text-align: center;
 		}
 
@@ -101,12 +101,12 @@ header {
 		}
 
 		h2 {
-			font-size: 1.8em;
+			font-size: 1.3em;
 			text-align: center;
 		}
 
 		h3 {
-			font-size: 1.3em;
+			font-size: 1.2em;
 			text-align: center;
 		}
 	}
@@ -114,6 +114,15 @@ header {
 		height: ($headerHeight - 5px);
 		border: 5px solid #333;
 		border-bottom: 0;
+	}
+}
+
+/* 650px breakpoint*/
+@media only screen and (max-width: 650px) {
+	.headers {
+		h2 {
+			font-size: 1.15em;
+		}
 	}
 }
 
@@ -127,6 +136,11 @@ header {
 		margin: 0;
 		border-top: 1px solid #333;
 		float: none;
+
+		h2 {
+			font-size: 1.4em;
+			text-align: center;
+		}
 	}
    .profPhoto {
 	   	display: block;
@@ -150,12 +164,12 @@ header {
 			font-size: 1.5em;
 			text-align: center;
 		}
-	
+
 		h2 {
-			font-size: 1.6em;
+			font-size: 1.3em;
 			text-align: center;
 		}
-	
+
 		h3 {
 			font-size: 1.2em;
 			text-align: center;
@@ -172,16 +186,16 @@ header {
 }
 
 
-/* 310px breakpoint*/
-@media only screen and (max-width: 310px) {
-	
+/* 350px breakpoint*/
+@media only screen and (max-width: 350px) {
+
 	.headers {
 		h2 {
-			font-size: 1.3em;
+			font-size: 1.1em;
 			text-align: center;
 		}
 		h3 {
-			font-size: 1.1em;
+			font-size: 1em;
 			text-align: center;
 		}
 	}

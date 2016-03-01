@@ -11,7 +11,7 @@
     .headers h1:hover {
       font-size: 2.1em; }
   .headers h2 {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center; }
   .headers h3 {
     font-size: 1.5em;
@@ -49,7 +49,7 @@ header {
       .headers h1:hover {
         font-size: 1.7em; }
     .headers h2 {
-      font-size: 2em;
+      font-size: 1.7em;
       text-align: center; }
     .headers h3 {
       font-size: 1.5em;
@@ -75,15 +75,20 @@ header {
       .headers h1:hover {
         font-size: 1.7em; }
     .headers h2 {
-      font-size: 1.8em;
+      font-size: 1.3em;
       text-align: center; }
     .headers h3 {
-      font-size: 1.3em;
+      font-size: 1.2em;
       text-align: center; }
   .profPhoto {
     height: 245px;
     border: 5px solid #333;
     border-bottom: 0; } }
+
+/* 650px breakpoint*/
+@media only screen and (max-width: 650px) {
+  .headers h2 {
+    font-size: 1.15em; } }
 
 /* 600px breakpoint*/
 @media only screen and (max-width: 600px) {
@@ -94,6 +99,9 @@ header {
     margin: 0;
     border-top: 1px solid #333;
     float: none; }
+    .headers h2 {
+      font-size: 1.4em;
+      text-align: center; }
   .profPhoto {
     display: block;
     float: none;
@@ -111,7 +119,7 @@ header {
     font-size: 1.5em;
     text-align: center; }
   .headers h2 {
-    font-size: 1.6em;
+    font-size: 1.3em;
     text-align: center; }
   .headers h3 {
     font-size: 1.2em;
@@ -124,11 +132,11 @@ header {
     height: auto;
     width: 200px; } }
 
-/* 310px breakpoint*/
-@media only screen and (max-width: 310px) {
+/* 350px breakpoint*/
+@media only screen and (max-width: 350px) {
   .headers h2 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-align: center; }
   .headers h3 {
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center; } }
