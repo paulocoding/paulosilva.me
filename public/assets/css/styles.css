@@ -99,6 +99,7 @@ a::selection {
   width: 30%; }
 
 .content {
+  display: block;
   max-width: 900px;
   margin: auto; }
 
