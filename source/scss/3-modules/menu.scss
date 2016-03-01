@@ -2,7 +2,7 @@
 nav {
 		display: block;
 		position: absolute;
-		right: 0;
+		right: 15%;
 		top: 400px;
 		margin: 0;
 		padding: 0;
@@ -10,7 +10,7 @@ nav {
 		height: 350px;
 		background-color: #222;
 		z-index: 2;
-		
+
 		a.expand{
 			display: none;
 		}
@@ -24,19 +24,19 @@ nav {
 				transition: background-color 200ms;
 				&:hover{
 					background-color: #10ce9f;
-				}	
+				}
 			}
 		}
 }
 .active{
-	background-color: #10ce9f;					
-}	
+	background-color: #10ce9f;
+}
 
 .fixed{
 		position: fixed;
 		top: 140px;
 	}
-	
+
 .back-top {
 	display: block;
 	position: fixed;
@@ -56,7 +56,7 @@ nav {
 	}
 	&:hover{
 		background-color: #10ce9f;
-	}		
+	}
 }
 
 
@@ -73,11 +73,11 @@ nav {
 		top: 250px;
 	}
 }
-// mobile menu 
+// mobile menu
 
 /* 910px breakpoint*/
 @media only screen and (max-width: 910px) {
-	
+
 	nav {
 		display: block;
 		position: fixed;
@@ -113,12 +113,12 @@ nav {
 				transition: background-color 200ms;
 				&:hover{
 					background-color: #46d6b2;
-				}		
+				}
 			}
 		}
-		
+
 	}
-	
+
 	.menu-open{
           width: 95%;
           height: 335px;
@@ -127,5 +127,38 @@ nav {
 	.fixed{
 			top: 10px;
 		}
-	
+
+}
+
+
+/* resolution breakpoints */
+
+@media only screen and (min-width: 2000px) {
+	nav {
+			right: 20%;
+	}
+}
+
+@media only screen and (min-width: 2500px) {
+	nav {
+			right: 25%;
+	}
+}
+
+@media only screen and (max-width: 1700px) {
+	nav {
+			right: 10%;
+	}
+}
+
+@media only screen and (max-width: 1450px) {
+	nav {
+			right: 5%;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	nav {
+			right: 0;
+	}
 }

@@ -542,7 +542,7 @@ header {
 nav {
   display: block;
   position: absolute;
-  right: 0;
+  right: 15%;
   top: 400px;
   margin: 0;
   padding: 0;
@@ -643,6 +643,27 @@ nav {
     transition: width 150ms, height 200ms 140ms; }
   .fixed {
     top: 10px; } }
+
+/* resolution breakpoints */
+@media only screen and (min-width: 2000px) {
+  nav {
+    right: 20%; } }
+
+@media only screen and (min-width: 2500px) {
+  nav {
+    right: 25%; } }
+
+@media only screen and (max-width: 1700px) {
+  nav {
+    right: 10%; } }
+
+@media only screen and (max-width: 1450px) {
+  nav {
+    right: 5%; } }
+
+@media only screen and (max-width: 1280px) {
+  nav {
+    right: 0; } }
 
 .overlay-dark, .img-overlay {
   display: none;
