@@ -15,6 +15,14 @@
 			background-color: #00b285;
 			color: #fff;
 			border-radius: 4px;
+			transition: all 0.1s ease-out;
+			&:hover {
+				// padding: 4px 12px;
+				// margin: 0 2px;
+				transform: scale(1.1);
+				background-color: #7fe0c8;
+				color: #244;
+			}
 		}
 	}
 }

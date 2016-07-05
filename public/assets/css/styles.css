@@ -458,7 +458,15 @@ header {
     background-color: #00b285;
     color: #fff;
     -webkit-border-radius: 4px;
-            border-radius: 4px; }
+            border-radius: 4px;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out; }
+    .tech-skills ul li:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+      background-color: #7fe0c8;
+      color: #244; }
 
 .projects {
   display: block;
@@ -482,8 +490,8 @@ header {
       opacity: 0.7;
       width: 192px;
       height: 192px;
-      -webkit-transition: all 0.25s ease-in-out;
-      transition: all 0.25s ease-in-out; }
+      -webkit-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out; }
     .projects li figcaption {
       display: block;
       position: relative;
