@@ -510,7 +510,10 @@ header {
           -ms-transform: translate(0, -90px);
               transform: translate(0, -90px); }
     .projects li:hover img {
-      opacity: 1; }
+      opacity: 1;
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
 
 /* resolution breakpoints */
 /* 1010px breakpoint*/
