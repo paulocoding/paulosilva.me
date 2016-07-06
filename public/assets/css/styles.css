@@ -141,6 +141,13 @@ a::selection {
   font-weight: 500;
   line-height: 1.2em; }
 
+.col-4 {
+  display: block;
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: 0; }
+
 .col-3 {
   display: block;
   float: left;
@@ -177,6 +184,12 @@ a::selection {
     display: block;
     float: left;
     width: 50%;
+    margin: 0;
+    padding: 0; }
+  .col-s-3 {
+    display: block;
+    float: left;
+    width: 33%;
     margin: 0;
     padding: 0; } }
 
@@ -218,14 +231,32 @@ a::selection {
   .content {
     max-width: 640px;
     margin: auto;
-    padding: 0 7.5%; } }
+    padding: 0 7.5%; }
+  .col-xs-2 {
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0; }
+  .col-xs-1 {
+    display: block;
+    float: left;
+    width: 70%;
+    margin: 0 15%;
+    padding: 0; } }
 
 /* 480px breakpoint*/
 @media only screen and (max-width: 480px) {
   .section-side {
     width: 15%; }
   .section {
-    width: 70%; } }
+    width: 70%; }
+  .col-xxs-1 {
+    display: block;
+    float: left;
+    width: 90%;
+    margin: 0 5%;
+    padding: 0; } }
 
 .headers {
   margin: 140px 0 0 0;
