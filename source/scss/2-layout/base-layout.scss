@@ -33,14 +33,14 @@ main {
 }
 
 a {
-	color: #54eac5;
+	color: $primary-color;
 	&:hover{
-		color: #e6f7f2;
+		color: $active-color;
 	}
 }
 
 footer{
-	background-color: #10ce9f;
+	background-color: $primary-color;
 	padding: 40px 20px 40px 20px;
 	margin: 20px 0 0 0;
 	img{
@@ -74,7 +74,7 @@ a::selection {
 	margin-top: 25px;
 	float: left;
 	width: 35%;
-	border-bottom: 2px solid #00d49f;
+	border-bottom: 2px solid $primary-color;
 }
 
 .section {
@@ -118,7 +118,7 @@ a::selection {
 	h3 {
 		text-align: left;
 		padding: 18px 2px 1px 10px;
-		color: #00b285
+		color: $primary-color;
 	}
 	h4 {
 		font-size: 1.1em;

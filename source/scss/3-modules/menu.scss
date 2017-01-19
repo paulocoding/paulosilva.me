@@ -23,13 +23,13 @@ nav {
 				font-size: 1.1em;
 				transition: background-color 200ms;
 				&:hover{
-					background-color: #10ce9f;
+					background-color: $active-color;
 				}
 			}
 		}
 }
 .active{
-	background-color: #10ce9f;
+	background-color: $primary-color;
 }
 
 .fixed{
@@ -55,7 +55,7 @@ nav {
 		padding: 8px 0 0 0;
 	}
 	&:hover{
-		background-color: #10ce9f;
+		background-color: $primary-color;
 	}
 }
 
@@ -112,7 +112,7 @@ nav {
 				font-size: 1.4em;
 				transition: background-color 200ms;
 				&:hover{
-					background-color: #46d6b2;
+					background-color: $primary-color;
 				}
 			}
 		}
