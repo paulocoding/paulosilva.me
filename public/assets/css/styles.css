@@ -133,6 +133,13 @@ a::selection {
   padding: 18px 2px 1px 10px;
   color: #4d9199; }
 
+.left-group a h3 {
+  text-align: left;
+  padding: 18px 2px 1px 10px;
+  color: #4d9199; }
+  .left-group a h3:hover {
+    color: #55b6c1; }
+
 .left-group h4 {
   font-size: 1.1em; }
 

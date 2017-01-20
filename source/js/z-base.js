@@ -1,13 +1,13 @@
 // main function
 // executed on document ready
 var main = function () {
-  
+
   // hidding back top arrow
   $('.back-top').hide();
-  
+
   // set my current age
   $('.my-age').text(getAge(25, 9, 1985));
-  
+
   // smooth scroll link
   $('a.scroll').click(function(e) {
         var $anchor = $(this);
@@ -22,26 +22,26 @@ var main = function () {
           }
         }
   });
-  
+
   // show back to top arrow if scrolled down
   $(document).scroll(function(){
     if($(window).scrollTop() > 160) {
       $('.back-top').fadeIn(400);
     }
     else {
-      $('.back-top').fadeOut(400);      
+      $('.back-top').fadeOut(400);
     }
   });
-  
-  // change menu to fixed on scroll 
+
+  // change menu to fixed on scroll
   var toogleMenuFixed = function(height) {
     if($(window).scrollTop() > height){
           $('nav').addClass('fixed');
         } else {
-          $('nav').removeClass('fixed');        
+          $('nav').removeClass('fixed');
         }
   };
-  
+
   $(document).scroll(function(){
     var windowWidth = window.innerWidth;
     // only if not on hamburger mode
@@ -56,9 +56,9 @@ var main = function () {
       }
     }
   });
-  
+
   // active button on menu based on scroll
-  var sections = ['#about', '#objectives', '#tech-skills', '#projects', '#education', '#experience', '#contact' ];
+  var sections = ['#about', '#projects', '#tech-skills', '#presentations', '#education', '#experience', '#contact' ];
   $(document).scroll(function(){
       var sectionOffset = [];
       // getting all the offsets
@@ -68,10 +68,10 @@ var main = function () {
       for(var i=0, max=sections.length;i<max-1;i++){
         sectionOffset.push($(sections[i]).offset().top + offsetMargin);
       }
-      //last one is special 
-      //needs to give have margin since he will never cross top screen      
-      sectionOffset.push($(sections[sections.length-1]).offset().top - window.innerHeight + $('#contact').height());      
-      
+      //last one is special
+      //needs to give have margin since he will never cross top screen
+      sectionOffset.push($(sections[sections.length-1]).offset().top - window.innerHeight + $('#contact').height());
+
       // looking for the active section
       for(var i=0, max=sections.length;i<max;i++){
         if(sectionOffset[i] < $(window).scrollTop()) {
@@ -79,37 +79,37 @@ var main = function () {
           $($('.menu-btn')[i]).addClass('active');
         }
       }
-      
+
     });
-  
+
   // menu toggle function
   var menuToggle = function(){
     var menu = $('nav');
     menu.toggleClass('menu-open');
   };
-  
+
 // hamburger click
   $('a.expand').click(function(e){
     menuToggle();
     e.preventDefault();
   });
-  
-  // project overlay page 
-  
+
+  // project overlay page
+
   // open an overlay
   $('.overlay-btn').click(function(e){
     $('.'+this.id).addClass('overlay-enabled');
     $('.overlay-dark').addClass('overlay-enabled');
     e.preventDefault();
   });
-  
+
   // stop all youtube videos
   var stopYt= function(){
     $('.yt-video').each(function(){
       this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*')
-    });    
+    });
   };
-  
+
   // close button on overlay
   $('.btn-close').click(function(e){
     $('.overlay-page').removeClass('overlay-enabled');
@@ -117,7 +117,7 @@ var main = function () {
     stopYt();
     e.preventDefault();
   });
-  
+
   // close when clicking outside the project page
   $('.overlay-dark').click(function(e){
     $('.overlay-page').removeClass('overlay-enabled');
@@ -125,28 +125,28 @@ var main = function () {
     stopYt();
     e.preventDefault();
   });
-  
+
   // scale up img on click
   $('.get-overlay-img').click(function(e){
     $('#full-img')[0].src=this.href;
     $('.img-overlay').addClass('overlay-enabled');
-    e.preventDefault();    
+    e.preventDefault();
   });
-  
+
   // close big image
   $('#full-img').click(function(e){
     $('#full-img')[0].src='#';
     $('.img-overlay').removeClass('overlay-enabled');
-    e.preventDefault();        
+    e.preventDefault();
   });
-  
+
   // close image when clicking outside the IMG
   $('.img-overlay').click(function(e){
     $('#full-img')[0].src='#';
     $('.img-overlay').removeClass('overlay-enabled');
     e.preventDefault();
   });
-  
+
   // end main function
 };
 
